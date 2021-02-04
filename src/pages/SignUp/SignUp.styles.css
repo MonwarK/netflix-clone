@@ -1,0 +1,52 @@
+.sign-up{
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;    
+    position: absolute;    
+    margin: auto;
+    height: 250px;
+    width: 80%;
+    max-width: 300px;
+    padding: 50px 25px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.sign-up h1{
+    font-size: 1.4rem;
+    text-align: left;
+    margin-bottom: 25px;
+}
+
+.sign-up-grey{
+    color: lightgray;
+}
+
+.sign-up-link:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.sign-up h4{
+    margin-top: 25px;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.sign-up input[type=email], .sign-up input[type=password], .sign-up button{    
+    border: none;
+    outline: none;
+    width: 90%;    
+    padding: 10px 15px;
+    border-radius: 4px;
+    margin: 5px 0;
+}
+
+.sign-up button{
+    width: 100%;        
+    background-color: #E50914;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 25px;
+}

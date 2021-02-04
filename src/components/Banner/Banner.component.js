@@ -31,11 +31,14 @@ function Banner() {
             className="banner" 
             style = {{
                 backgroundSize: "cover",
-                backgroundPosition: "center center",
+                
+                backgroundPosition: "center",
                 backgroundImage: `url("https://image.tmdb.org/t/p/original/${movie?.backdrop_path}")`
             }}
         >
+
             <div className="banner-contents">
+            
                 <h1 className="banner-title">{movie?.name || movie?.name || movie?.original_name}</h1>
 
                 <div className="banner-buttons">
