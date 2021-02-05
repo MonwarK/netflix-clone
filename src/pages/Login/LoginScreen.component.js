@@ -6,6 +6,8 @@ function LoginScreen() {
 
     const [signIn, setSignIn] = useState(false)
 
+    const toLogin = () => setSignIn(true)
+
     return (
         <div className="login-screen">
 
@@ -13,7 +15,7 @@ function LoginScreen() {
                 <div className="login-gradient">
                     <div className="login-nav">                         
                         <img className="login-logo" src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png" alt="Netflix"/>            
-                        <button className="login-button">Sign in</button>
+                        <button className="login-button" onClick={toLogin}>Sign in</button>
                     </div>
                     {
                         signIn ? (
@@ -27,7 +29,7 @@ function LoginScreen() {
                                     <p>Ready to watch? Enter your email to create or restart your membership.</p>                                
 
                                     <div className="login-form">
-                                        <form onSubmit={() => setSignIn(true)}>
+                                        <form onSubmit={toLogin}>
                                             <input type="text" placeholder="Email address" />
                                             <button>GET STARTED</button>
                                         </form>

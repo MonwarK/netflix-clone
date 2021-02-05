@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import React, { useRef } from 'react'
 import { auth } from '../../firebase/firebase.utils';
 import "./SignUp.styles.css"
 
@@ -33,7 +33,7 @@ function SignUp() {
     return (
         <div className="sign-up">
             <form>            
-                <h1>Sign Up</h1>
+                <h1>Sign In</h1>
                 <input type="email" placeholder="Email" ref={emailRef}/>
                 <input type="password" placeholder="Password" ref={passwordRef}/>
                 <button type="submit" onClick={signIn}>Sign in</button>
